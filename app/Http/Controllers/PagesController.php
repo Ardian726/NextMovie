@@ -18,6 +18,6 @@ class PagesController extends Controller
     {
         $allMovie = Movie::findOrFail($id);
         $allMovieSingle = Movie::findOrFail($id)->orderBy('id', 'DESC')->paginate(4);
-        return view('single', compact('allMovie', 'allBeritaSingle'));
+        return view('single', compact('allMovie', 'allMovieSingle'));
     }
 }

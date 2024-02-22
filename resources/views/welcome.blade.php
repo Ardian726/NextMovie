@@ -32,7 +32,7 @@
                     @if (Route::has('login'))
                     <div class="sm:fixed sm:top-0 sm:right-0 p-6 text-right z-10">
                         @auth
-                        <a href="{{ url('/home') }}" class="btn btn-sm btn-primary">Home</a>
+                        <a href="{{ url('/home') }}" class="btn btn-sm btn-primary">Dashboard</a>
                         @else
                         <a href="{{ route('login') }}" class="btn btn-sm btn-primary">Login</a>
 
@@ -54,8 +54,7 @@
                 <div class="text-center px-0">
                     <h1 class="display-4 fst-italic">All The Best <span class="text-danger">Movie</span> From Around The World Is Here</h1>
                     <p class="lead my-3">
-                        Multiple lines of text that form the lede, informing new readers quickly and
-                        efficiently about what’s most interesting in this post’s contents.
+                        Wacth Every Single Movie Free
                     </p>
                 </div>
             </div>
@@ -79,7 +78,7 @@
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
                                     <a href="{{ route('single', $item->id) }}"
-                                        class="btn btn-sm btn-outline-secondary">Read</a>
+                                        class="btn btn-sm btn-outline-secondary">Wacth</a>
                                 </div>
                                 <small class="text-body-secondary">
                                     {{ $item->created_at->format('F j, Y') }}
